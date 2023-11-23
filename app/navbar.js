@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
+import Split from "./split";
 
 export default function Navbar() {
   return (
@@ -20,7 +21,7 @@ export default function Navbar() {
             className="riki_pfp"/>
           {/* items */}
           <ul className="large_navbar">
-              <li><Link href="/">Startpagina</Link></li>
+              <li><a href="/">Startpagina</a></li>
               <li><Link href="/">Biografie</Link></li>
               <li><Link href="../news">Nieuws</Link></li>
               <li><Link href="/">Galerij</Link></li>
@@ -28,14 +29,15 @@ export default function Navbar() {
           </ul>
           {/* mobile icons */}
           <ul className="icon_navbar">
-              <li><Link href="/"><Image src="/navbar_icons/house-solid.svg" width={100} height={100} alt="Startpagina icon" className="navbar_icon"/></Link></li>
+              <li><a href="/"><Image src="/navbar_icons/house-solid.svg" width={100} height={100} alt="Startpagina icon" className="navbar_icon"/></a></li>
               <li><Link href="/"><Image src="/navbar_icons/address-card-solid.svg" width={100} height={100} alt="Biografie icon" className="navbar_icon"/></Link></li>
-              <li><Link href="/"><Image src="/navbar_icons/bell-solid.svg" width={100} height={100} alt="Nieuws icon" className="navbar_icon"/></Link></li>
+              <li><Link href="../news"><Image src="/navbar_icons/bell-solid.svg" width={100} height={100} alt="Nieuws icon" className="navbar_icon"/></Link></li>
               <li><Link href="/"><Image src="/navbar_icons/folder-open-solid.svg" width={100} height={100} alt="Galerij icon" className="navbar_icon"/></Link></li>
               <li><Link href="/"><Image src="/navbar_icons/envelope-solid.svg" width={100} height={100} alt="Contact icon" className="navbar_icon"/></Link></li>
           </ul>
         </nav>
       </header>
+      <Split/>
     </>
   )
 }

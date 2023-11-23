@@ -42,17 +42,29 @@ h1, p {
 
 /* mobile navbar */
 .navbar_icon {
-  height: 1em;
-  width: auto;
+  height: auto;
+  width: 1.3em;
 }
 .icon_navbar {
   display: none;
   position: absolute;
+  margin: 0;
+  width: calc(100% - 100px);
   top: 25%;
   padding: 0;
   list-style-type: none;
 }
 @media screen and (width < 900px) {
+  .navbar_container {
+    height: 70px;
+  }
+  .navbar_container li {
+    margin: 0 10px;
+  }
+  .riki_pfp {
+    height: 70px;
+    border-radius: 10px;
+  }
   .icon_navbar {
     display: inline;
   }
