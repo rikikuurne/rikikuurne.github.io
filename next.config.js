@@ -5,7 +5,15 @@ const nextConfig = {
   distDir: 'dist',
   images: {
     unoptimized: true,
-  }
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/api/behold',
+        destination: 'https://w.behold.so/widget.js',
+      },
+    ]
+  },
 }
  
 module.exports = nextConfig
