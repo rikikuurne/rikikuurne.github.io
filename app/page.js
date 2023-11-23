@@ -53,7 +53,7 @@ export default function Page() {
 
         <section className="home_post">
           <h1>Laatste Nieuws:</h1>
-          <figure data-behold-id="UAkIjTZxmkpylMFcB6bG">{/* Laatste Instagram Post. Gelieve de pagina te herladen indien je deze tekst kan zien. */}</figure>
+          <figure data-behold-id="UAkIjTZxmkpylMFcB6bG">Laatste Instagram Post. Gelieve de pagina te herladen indien je deze tekst kan zien.</figure>
           <Script src="https://w.behold.so/widget.js" type="module" />
         </section>
       </article>
