@@ -21,19 +21,20 @@ export default function Navbar() {
             className="riki_pfp"/>
           {/* items */}
           <ul className="large_navbar">
+              {/* Startpagina and Nieuws should be a elements since Link does not re-run the instagram script */}
               <li><a href="/">Startpagina</a></li>
-              <li><Link href="/">Biografie</Link></li>
-              <li><Link href="../news">Nieuws</Link></li>
-              <li><Link href="/">Galerij</Link></li>
-              <li><Link href="/">Contact</Link></li>
+              <li><Link href="../bio">Biografie</Link></li>
+              <li><a href="../news">Nieuws</a></li>
+              <li><Link href="../galerij">Galerij</Link></li>
+              <li><Link href="../contact">Contact</Link></li>
           </ul>
           {/* mobile icons */}
           <ul className="icon_navbar">
               <li><a href="/"><Image src="/navbar_icons/house-solid.svg" width={100} height={100} alt="Startpagina icon" className="navbar_icon"/></a></li>
-              <li><Link href="/"><Image src="/navbar_icons/address-card-solid.svg" width={100} height={100} alt="Biografie icon" className="navbar_icon"/></Link></li>
-              <li><Link href="../news"><Image src="/navbar_icons/bell-solid.svg" width={100} height={100} alt="Nieuws icon" className="navbar_icon"/></Link></li>
-              <li><Link href="/"><Image src="/navbar_icons/folder-open-solid.svg" width={100} height={100} alt="Galerij icon" className="navbar_icon"/></Link></li>
-              <li><Link href="/"><Image src="/navbar_icons/envelope-solid.svg" width={100} height={100} alt="Contact icon" className="navbar_icon"/></Link></li>
+              <li><Link href="../bio"><Image src="/navbar_icons/address-card-solid.svg" width={100} height={100} alt="Biografie icon" className="navbar_icon"/></Link></li>
+              <li><a href="../news"><Image src="/navbar_icons/bell-solid.svg" width={100} height={100} alt="Nieuws icon" className="navbar_icon"/></a></li>
+              <li><Link href="../galerij"><Image src="/navbar_icons/folder-open-solid.svg" width={100} height={100} alt="Galerij icon" className="navbar_icon"/></Link></li>
+              <li><Link href="../contact"><Image src="/navbar_icons/envelope-solid.svg" width={100} height={100} alt="Contact icon" className="navbar_icon"/></Link></li>
           </ul>
         </nav>
       </header>

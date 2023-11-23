@@ -53,14 +53,12 @@ export default function Page() {
 
         <section className="home_post">
           <h1>Laatste Nieuws:</h1>
-          <figure data-behold-id="3Qgyp5yKV3vH9WJpnSqz">Laatste Instagram Post. Gelieve de pagina te herladen indien je deze tekst kan zien</figure>
+          <figure data-behold-id="3Qgyp5yKV3vH9WJpnSqz">Laatste Instagram Post. Gelieve de pagina te herladen indien je deze tekst kan zien.</figure>
           {/* <script src="https://w.behold.so/widget.js" type="module"></script> */}
           <Script src="https://w.behold.so/widget.js" type="module" strategy="beforeInteractive"/>
         </section>
       </article>
-
-      <Split/>
-
+      
       <Footer />
     </>
   )
